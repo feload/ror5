@@ -1,2 +1,2 @@
-# ror5
-Ruby on Rails experimental
+# Ruby on rails starter kit.
+Just that :)
