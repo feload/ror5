@@ -4,9 +4,10 @@ services:
     image: postgres
   web:
     build: .
+    working_dir: /usr/src/app
     command: bundle exec rails s -p 3000 -b '0.0.0.0'
     volumes:
-      - .:/application
+      - ./src:/usr/src/app
     ports:
       - "3000:3000"
     depends_on:
